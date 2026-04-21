@@ -1,0 +1,445 @@
+{
+  "suite_name": "evalforge_full",
+  "metadata": {
+    "judge": "mock",
+    "model": "mock",
+    "samples": 2,
+    "datasets": [
+      "hotpotqa",
+      "triviaqa",
+      "mmlu_pro",
+      "truthfulqa",
+      "financebench"
+    ]
+  },
+  "overall_score": 0.2628875,
+  "pass_rate": 0.0,
+  "metric_means": {
+    "hallucination_rate": 0.4973,
+    "groundedness": 0.18195,
+    "answer_relevance": 0.1568,
+    "faithfulness": 0.2155
+  },
+  "results": [
+    {
+      "case_id": "hotpotqa/hotpot_001",
+      "aggregate": 0.27425,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.010499999999999999,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.006363961030678927,
+          "samples": [
+            0.006,
+            0.015
+          ]
+        },
+        "groundedness": {
+          "score": 0.0965,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.014849242404917501,
+          "samples": [
+            0.107,
+            0.086
+          ]
+        },
+        "faithfulness": {
+          "score": 0.327,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.009899494936611674,
+          "samples": [
+            0.334,
+            0.32
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.663,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.02262741699796954,
+          "samples": [
+            0.679,
+            0.647
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "hotpotqa/hotpot_002",
+      "aggregate": 0.284125,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.2075,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.0007071067811865482,
+          "samples": [
+            0.208,
+            0.207
+          ]
+        },
+        "groundedness": {
+          "score": 0.2445,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.014849242404917492,
+          "samples": [
+            0.255,
+            0.234
+          ]
+        },
+        "faithfulness": {
+          "score": 0.1525,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.00777817459305203,
+          "samples": [
+            0.147,
+            0.158
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.532,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.018384776310850174,
+          "samples": [
+            0.5449999999999999,
+            0.519
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "triviaqa/trivia_001",
+      "aggregate": 0.224,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.047,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.014142135623730952,
+          "samples": [
+            0.037,
+            0.057
+          ]
+        },
+        "groundedness": {
+          "score": 0.0025,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.0035355339059327377,
+          "samples": [
+            0.005,
+            0.0
+          ]
+        },
+        "faithfulness": {
+          "score": 0.3365,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.020506096654409858,
+          "samples": [
+            0.351,
+            0.322
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.51,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.008485281374238578,
+          "samples": [
+            0.516,
+            0.504
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "triviaqa/trivia_002",
+      "aggregate": 0.269875,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.238,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.015556349186104039,
+          "samples": [
+            0.249,
+            0.227
+          ]
+        },
+        "groundedness": {
+          "score": 0.3115,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.0021213203435596446,
+          "samples": [
+            0.313,
+            0.31
+          ]
+        },
+        "faithfulness": {
+          "score": 0.0055,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.007778174593052022,
+          "samples": [
+            0.011,
+            0.0
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.5245,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.0190918830920368,
+          "samples": [
+            0.511,
+            0.538
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "mmlu_pro/mmlu_001",
+      "aggregate": 0.275125,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.269,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.01131370849898477,
+          "samples": [
+            0.277,
+            0.261
+          ]
+        },
+        "groundedness": {
+          "score": 0.2465,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.01909188309203678,
+          "samples": [
+            0.233,
+            0.26
+          ]
+        },
+        "faithfulness": {
+          "score": 0.262,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.02262741699796954,
+          "samples": [
+            0.246,
+            0.278
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.32299999999999995,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.01979898987322327,
+          "samples": [
+            0.33699999999999997,
+            0.30900000000000005
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "mmlu_pro/mmlu_002",
+      "aggregate": 0.170625,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.0805,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.017677669529663684,
+          "samples": [
+            0.093,
+            0.068
+          ]
+        },
+        "groundedness": {
+          "score": 0.0505,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.017677669529663688,
+          "samples": [
+            0.063,
+            0.038
+          ]
+        },
+        "faithfulness": {
+          "score": 0.035,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.01697056274847714,
+          "samples": [
+            0.047,
+            0.023
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.5165,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.009192388155425125,
+          "samples": [
+            0.51,
+            0.523
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "truthfulqa/truthful_001",
+      "aggregate": 0.264375,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.2235,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.004949747468305837,
+          "samples": [
+            0.22,
+            0.227
+          ]
+        },
+        "groundedness": {
+          "score": 0.14500000000000002,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.008485281374238558,
+          "samples": [
+            0.151,
+            0.139
+          ]
+        },
+        "faithfulness": {
+          "score": 0.27849999999999997,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.006363961030678894,
+          "samples": [
+            0.283,
+            0.274
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.4105000000000001,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.010606601717798222,
+          "samples": [
+            0.403,
+            0.41800000000000004
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "truthfulqa/truthful_002",
+      "aggregate": 0.196,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.0175,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.004949747468305833,
+          "samples": [
+            0.021,
+            0.014
+          ]
+        },
+        "groundedness": {
+          "score": 0.10500000000000001,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.01131370849898476,
+          "samples": [
+            0.113,
+            0.097
+          ]
+        },
+        "faithfulness": {
+          "score": 0.367,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.016970562748477157,
+          "samples": [
+            0.355,
+            0.379
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.2945,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.010606601717798222,
+          "samples": [
+            0.30200000000000005,
+            0.28700000000000003
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "financebench/finance_001",
+      "aggregate": 0.2855,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.2875,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.004949747468305837,
+          "samples": [
+            0.284,
+            0.291
+          ]
+        },
+        "groundedness": {
+          "score": 0.237,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.012727922061357847,
+          "samples": [
+            0.246,
+            0.228
+          ]
+        },
+        "faithfulness": {
+          "score": 0.115,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.0014142135623730963,
+          "samples": [
+            0.114,
+            0.116
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.5025,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.0035355339059327407,
+          "samples": [
+            0.505,
+            0.5
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "financebench/finance_002",
+      "aggregate": 0.385,
+      "scores": {
+        "answer_relevance": {
+          "score": 0.187,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.0028284271247461927,
+          "samples": [
+            0.189,
+            0.185
+          ]
+        },
+        "groundedness": {
+          "score": 0.3805,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.0190918830920368,
+          "samples": [
+            0.394,
+            0.367
+          ]
+        },
+        "faithfulness": {
+          "score": 0.276,
+          "reasoning": "Mock judgment based on 0.00 overlap signal.",
+          "std": 0.01131370849898473,
+          "samples": [
+            0.284,
+            0.268
+          ]
+        },
+        "hallucination_rate": {
+          "score": 0.6965,
+          "reasoning": "Mock judgment based on 0.50 overlap signal.",
+          "std": 0.002121320343559566,
+          "samples": [
+            0.6950000000000001,
+            0.698
+          ]
+        }
+      }
+    }
+  ]
+}

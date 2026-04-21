@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evalforge"
+version = "0.1.0"
+description = "Open-source LLM evaluation harness with pytest integration and regression-testing CI."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Raghubir Kumar Singh", email = "raghavsingh1999010@gmail.com" },
+]
+keywords = ["llm", "evaluation", "rag", "pytest", "ci", "hallucination", "groundedness"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Core deps are intentionally minimal. Judge backends are optional extras.
+dependencies = [
+    "pytest>=7.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+anthropic = ["anthropic>=0.25"]
+hf = ["datasets>=2.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.4",
+    "mypy>=1.8",
+]
+all = ["openai>=1.0", "anthropic>=0.25", "datasets>=2.0"]
+
+[project.scripts]
+evalforge-gate = "evalforge.regression_gate:main"
+
+[project.entry-points.pytest11]
+evalforge = "evalforge.pytest_plugin"
+
+[project.urls]
+Homepage = "https://github.com/raghav-singh-wizard/evalforge"
+Repository = "https://github.com/raghav-singh-wizard/evalforge"
+Issues = "https://github.com/raghav-singh-wizard/evalforge/issues"
+
+[tool.setuptools.packages.find]
+include = ["evalforge*"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501"]  # line too long — handled by formatter
+
+[tool.mypy]
+python_version = "3.10"
+strict_optional = true
+warn_unused_ignores = true
+ignore_missing_imports = true

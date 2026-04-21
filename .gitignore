@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+build/
+dist/
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.hypothesis/
+.ruff_cache/
+.mypy_cache/
+
+# Benchmark outputs (except baseline, which is committed)
+benchmarks/results/current.json
+benchmarks/results/example_output.json
+gate_report.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
