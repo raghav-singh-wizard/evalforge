@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
+from collections.abc import Iterable
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Iterable
 
 from evalforge.core import EvalCase, EvalResult, EvalSuite
 from evalforge.metrics.base import BaseMetric

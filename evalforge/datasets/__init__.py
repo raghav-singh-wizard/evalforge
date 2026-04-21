@@ -12,8 +12,8 @@ from evalforge.datasets.loaders import (
     load_from_hf,
     load_hotpotqa_sample,
     load_mmlu_pro_sample,
-    load_truthfulqa_sample,
     load_triviaqa_sample,
+    load_truthfulqa_sample,
 )
 
 __all__ = [
